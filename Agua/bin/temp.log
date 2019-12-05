@@ -1,0 +1,597 @@
+/*C6*/SET SCHEMA PUBLIC
+drop table if exists Client CASCADE 
+drop table if exists Payment CASCADE 
+drop table if exists Product CASCADE 
+drop table if exists Sale CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Client (idClient integer not null, CPF varchar(255) not null, adress varchar(255) not null, nomeClient varchar(255) not null, tel varchar(255) not null, primary key (idClient))
+create table Payment (idPayment integer not null, descriptionPayment varchar(255) not null, primary key (idPayment))
+create table Product (idProduct integer not null, descriptionProduct varchar(255) not null, primary key (idProduct))
+create table Sale (idSale integer not null, saleTime timestamp, status varchar(255), Client_idClient integer, Payment_idPayment integer, Product_idProduct integer, primary key (idSale))
+alter table Client add constraint UK_tffauhjxm1xmoir814ji2wxjq unique (CPF)
+alter table Sale add constraint FKndoffdyc0hhg45fxryje01p9s foreign key (Client_idClient) references Client
+alter table Sale add constraint FK3owj3j69atp9pnhmdpwl7lba9 foreign key (Payment_idPayment) references Payment
+alter table Sale add constraint FKrjvi0balejjcs0ishugwc7pp5 foreign key (Product_idProduct) references Product
+/*C7*/SET SCHEMA PUBLIC
+drop table if exists Client CASCADE 
+drop table if exists Payment CASCADE 
+drop table if exists Product CASCADE 
+drop table if exists Sale CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Client (idClient integer not null, CPF varchar(255) not null, adress varchar(255) not null, nomeClient varchar(255) not null, tel varchar(255) not null, primary key (idClient))
+create table Payment (idPayment integer not null, descriptionPayment varchar(255) not null, primary key (idPayment))
+create table Product (idProduct integer not null, descriptionProduct varchar(255) not null, primary key (idProduct))
+create table Sale (idSale integer not null, saleTime timestamp, status varchar(255), Client_idClient integer, Payment_idPayment integer, Product_idProduct integer, primary key (idSale))
+alter table Client add constraint UK_tffauhjxm1xmoir814ji2wxjq unique (CPF)
+alter table Sale add constraint FKndoffdyc0hhg45fxryje01p9s foreign key (Client_idClient) references Client
+alter table Sale add constraint FK3owj3j69atp9pnhmdpwl7lba9 foreign key (Payment_idPayment) references Payment
+alter table Sale add constraint FKrjvi0balejjcs0ishugwc7pp5 foreign key (Product_idProduct) references Product
+/*C8*/SET SCHEMA PUBLIC
+drop table if exists Client CASCADE 
+drop table if exists Payment CASCADE 
+drop table if exists Product CASCADE 
+drop table if exists Sale CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Client (idClient integer not null, CPF varchar(255) not null, adress varchar(255) not null, nomeClient varchar(255) not null, tel varchar(255) not null, primary key (idClient))
+create table Payment (idPayment integer not null, descriptionPayment varchar(255) not null, primary key (idPayment))
+create table Product (idProduct integer not null, descriptionProduct varchar(255) not null, primary key (idProduct))
+create table Sale (idSale integer not null, saleTime timestamp, status varchar(255), Client_idClient integer, Payment_idPayment integer, Product_idProduct integer, primary key (idSale))
+alter table Client add constraint UK_tffauhjxm1xmoir814ji2wxjq unique (CPF)
+alter table Sale add constraint FKndoffdyc0hhg45fxryje01p9s foreign key (Client_idClient) references Client
+alter table Sale add constraint FK3owj3j69atp9pnhmdpwl7lba9 foreign key (Payment_idPayment) references Payment
+alter table Sale add constraint FKrjvi0balejjcs0ishugwc7pp5 foreign key (Product_idProduct) references Product
+/*C9*/SET SCHEMA PUBLIC
+drop table if exists Client CASCADE 
+drop table if exists Payment CASCADE 
+drop table if exists Product CASCADE 
+drop table if exists Sale CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Client (idClient integer not null, CPF varchar(255) not null, adress varchar(255) not null, nomeClient varchar(255) not null, tel varchar(255) not null, primary key (idClient))
+create table Payment (idPayment integer not null, descriptionPayment varchar(255) not null, primary key (idPayment))
+create table Product (idProduct integer not null, descriptionProduct varchar(255) not null, primary key (idProduct))
+create table Sale (idSale integer not null, saleTime timestamp, status varchar(255), Client_idClient integer, Payment_idPayment integer, Product_idProduct integer, primary key (idSale))
+alter table Client add constraint UK_tffauhjxm1xmoir814ji2wxjq unique (CPF)
+alter table Sale add constraint FKndoffdyc0hhg45fxryje01p9s foreign key (Client_idClient) references Client
+alter table Sale add constraint FK3owj3j69atp9pnhmdpwl7lba9 foreign key (Payment_idPayment) references Payment
+alter table Sale add constraint FKrjvi0balejjcs0ishugwc7pp5 foreign key (Product_idProduct) references Product
+/*C7*/INSERT INTO PRODUCT VALUES(1,'Indai\u00e1')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 2
+COMMIT
+INSERT INTO PRODUCT VALUES(2,'Santa Joana')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 3
+COMMIT
+INSERT INTO PRODUCT VALUES(3,'Santa Clara')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 4
+COMMIT
+/*C8*/INSERT INTO PAYMENT VALUES(4,'Dinheiro')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 5
+COMMIT
+INSERT INTO PAYMENT VALUES(5,'Cart\u00e3o')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 6
+COMMIT
+/*C6*/INSERT INTO CLIENT VALUES(6,'70609433075','Av Boa viagem 123','Rayza Wilma','(81) 3333-3333')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 7
+COMMIT
+INSERT INTO CLIENT VALUES(7,'24093761000','Rua Nova 456','Thalita Brayner','(81) 98888-8888')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 8
+COMMIT
+INSERT INTO CLIENT VALUES(8,'48235674041','Travessa 890','Rafael Teste','(81) 99999-8888')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 9
+COMMIT
+/*C6*/SET SCHEMA PUBLIC
+drop table if exists Client CASCADE 
+drop table if exists Payment CASCADE 
+drop table if exists Product CASCADE 
+drop table if exists Sale CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Client (idClient integer not null, CPF varchar(255) not null, adress varchar(255) not null, nomeClient varchar(255) not null, tel varchar(255) not null, primary key (idClient))
+create table Payment (idPayment integer not null, descriptionPayment varchar(255) not null, primary key (idPayment))
+create table Product (idProduct integer not null, descriptionProduct varchar(255) not null, primary key (idProduct))
+create table Sale (idSale integer not null, saleTime timestamp, status varchar(255), Client_idClient integer, Payment_idPayment integer, Product_idProduct integer, primary key (idSale))
+alter table Client add constraint UK_tffauhjxm1xmoir814ji2wxjq unique (CPF)
+alter table Sale add constraint FKndoffdyc0hhg45fxryje01p9s foreign key (Client_idClient) references Client
+alter table Sale add constraint FK3owj3j69atp9pnhmdpwl7lba9 foreign key (Payment_idPayment) references Payment
+alter table Sale add constraint FKrjvi0balejjcs0ishugwc7pp5 foreign key (Product_idProduct) references Product
+/*C7*/SET SCHEMA PUBLIC
+drop table if exists Client CASCADE 
+drop table if exists Payment CASCADE 
+drop table if exists Product CASCADE 
+drop table if exists Sale CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Client (idClient integer not null, CPF varchar(255) not null, adress varchar(255) not null, nomeClient varchar(255) not null, tel varchar(255) not null, primary key (idClient))
+create table Payment (idPayment integer not null, descriptionPayment varchar(255) not null, primary key (idPayment))
+create table Product (idProduct integer not null, descriptionProduct varchar(255) not null, primary key (idProduct))
+create table Sale (idSale integer not null, saleTime timestamp, status varchar(255), Client_idClient integer, Payment_idPayment integer, Product_idProduct integer, primary key (idSale))
+alter table Client add constraint UK_tffauhjxm1xmoir814ji2wxjq unique (CPF)
+alter table Sale add constraint FKndoffdyc0hhg45fxryje01p9s foreign key (Client_idClient) references Client
+alter table Sale add constraint FK3owj3j69atp9pnhmdpwl7lba9 foreign key (Payment_idPayment) references Payment
+alter table Sale add constraint FKrjvi0balejjcs0ishugwc7pp5 foreign key (Product_idProduct) references Product
+/*C8*/SET SCHEMA PUBLIC
+drop table if exists Client CASCADE 
+drop table if exists Payment CASCADE 
+drop table if exists Product CASCADE 
+drop table if exists Sale CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Client (idClient integer not null, CPF varchar(255) not null, adress varchar(255) not null, nomeClient varchar(255) not null, tel varchar(255) not null, primary key (idClient))
+create table Payment (idPayment integer not null, descriptionPayment varchar(255) not null, primary key (idPayment))
+create table Product (idProduct integer not null, descriptionProduct varchar(255) not null, primary key (idProduct))
+create table Sale (idSale integer not null, saleTime timestamp, status varchar(255), Client_idClient integer, Payment_idPayment integer, Product_idProduct integer, primary key (idSale))
+alter table Client add constraint UK_tffauhjxm1xmoir814ji2wxjq unique (CPF)
+alter table Sale add constraint FKndoffdyc0hhg45fxryje01p9s foreign key (Client_idClient) references Client
+alter table Sale add constraint FK3owj3j69atp9pnhmdpwl7lba9 foreign key (Payment_idPayment) references Payment
+alter table Sale add constraint FKrjvi0balejjcs0ishugwc7pp5 foreign key (Product_idProduct) references Product
+/*C9*/SET SCHEMA PUBLIC
+drop table if exists Client CASCADE 
+drop table if exists Payment CASCADE 
+drop table if exists Product CASCADE 
+drop table if exists Sale CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Client (idClient integer not null, CPF varchar(255) not null, adress varchar(255) not null, nomeClient varchar(255) not null, tel varchar(255) not null, primary key (idClient))
+create table Payment (idPayment integer not null, descriptionPayment varchar(255) not null, primary key (idPayment))
+create table Product (idProduct integer not null, descriptionProduct varchar(255) not null, primary key (idProduct))
+create table Sale (idSale integer not null, saleTime timestamp, status varchar(255), Client_idClient integer, Payment_idPayment integer, Product_idProduct integer, primary key (idSale))
+alter table Client add constraint UK_tffauhjxm1xmoir814ji2wxjq unique (CPF)
+alter table Sale add constraint FKndoffdyc0hhg45fxryje01p9s foreign key (Client_idClient) references Client
+alter table Sale add constraint FK3owj3j69atp9pnhmdpwl7lba9 foreign key (Payment_idPayment) references Payment
+alter table Sale add constraint FKrjvi0balejjcs0ishugwc7pp5 foreign key (Product_idProduct) references Product
+/*C7*/INSERT INTO PRODUCT VALUES(1,'Indai\u00e1')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 2
+COMMIT
+INSERT INTO PRODUCT VALUES(2,'Santa Joana')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 3
+COMMIT
+INSERT INTO PRODUCT VALUES(3,'Santa Clara')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 4
+COMMIT
+/*C8*/INSERT INTO PAYMENT VALUES(4,'Dinheiro')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 5
+COMMIT
+INSERT INTO PAYMENT VALUES(5,'Cart\u00e3o')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 6
+COMMIT
+/*C6*/INSERT INTO CLIENT VALUES(6,'70609433075','Av Boa viagem 123','Rayza Wilma','(81) 3333-3333')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 7
+COMMIT
+INSERT INTO CLIENT VALUES(7,'24093761000','Rua Nova 456','Thalita Brayner','(81) 98888-8888')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 8
+COMMIT
+INSERT INTO CLIENT VALUES(8,'48235674041','Travessa 890','Rafael Teste','(81) 99999-8888')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 9
+COMMIT
+/*C6*/SET SCHEMA PUBLIC
+drop table if exists Client CASCADE 
+drop table if exists Payment CASCADE 
+drop table if exists Product CASCADE 
+drop table if exists Sale CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Client (idClient integer not null, CPF varchar(255) not null, adress varchar(255) not null, nomeClient varchar(255) not null, tel varchar(255) not null, primary key (idClient))
+create table Payment (idPayment integer not null, descriptionPayment varchar(255) not null, primary key (idPayment))
+create table Product (idProduct integer not null, descriptionProduct varchar(255) not null, primary key (idProduct))
+create table Sale (idSale integer not null, saleTime timestamp, status varchar(255), Client_idClient integer, Payment_idPayment integer, Product_idProduct integer, primary key (idSale))
+alter table Client add constraint UK_tffauhjxm1xmoir814ji2wxjq unique (CPF)
+alter table Sale add constraint FKndoffdyc0hhg45fxryje01p9s foreign key (Client_idClient) references Client
+alter table Sale add constraint FK3owj3j69atp9pnhmdpwl7lba9 foreign key (Payment_idPayment) references Payment
+alter table Sale add constraint FKrjvi0balejjcs0ishugwc7pp5 foreign key (Product_idProduct) references Product
+/*C7*/SET SCHEMA PUBLIC
+drop table if exists Client CASCADE 
+drop table if exists Payment CASCADE 
+drop table if exists Product CASCADE 
+drop table if exists Sale CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Client (idClient integer not null, CPF varchar(255) not null, adress varchar(255) not null, nomeClient varchar(255) not null, tel varchar(255) not null, primary key (idClient))
+create table Payment (idPayment integer not null, descriptionPayment varchar(255) not null, primary key (idPayment))
+create table Product (idProduct integer not null, descriptionProduct varchar(255) not null, primary key (idProduct))
+create table Sale (idSale integer not null, saleTime timestamp, status varchar(255), Client_idClient integer, Payment_idPayment integer, Product_idProduct integer, primary key (idSale))
+alter table Client add constraint UK_tffauhjxm1xmoir814ji2wxjq unique (CPF)
+alter table Sale add constraint FKndoffdyc0hhg45fxryje01p9s foreign key (Client_idClient) references Client
+alter table Sale add constraint FK3owj3j69atp9pnhmdpwl7lba9 foreign key (Payment_idPayment) references Payment
+alter table Sale add constraint FKrjvi0balejjcs0ishugwc7pp5 foreign key (Product_idProduct) references Product
+/*C8*/SET SCHEMA PUBLIC
+drop table if exists Client CASCADE 
+drop table if exists Payment CASCADE 
+drop table if exists Product CASCADE 
+drop table if exists Sale CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Client (idClient integer not null, CPF varchar(255) not null, adress varchar(255) not null, nomeClient varchar(255) not null, tel varchar(255) not null, primary key (idClient))
+create table Payment (idPayment integer not null, descriptionPayment varchar(255) not null, primary key (idPayment))
+create table Product (idProduct integer not null, descriptionProduct varchar(255) not null, primary key (idProduct))
+create table Sale (idSale integer not null, saleTime timestamp, status varchar(255), Client_idClient integer, Payment_idPayment integer, Product_idProduct integer, primary key (idSale))
+alter table Client add constraint UK_tffauhjxm1xmoir814ji2wxjq unique (CPF)
+alter table Sale add constraint FKndoffdyc0hhg45fxryje01p9s foreign key (Client_idClient) references Client
+alter table Sale add constraint FK3owj3j69atp9pnhmdpwl7lba9 foreign key (Payment_idPayment) references Payment
+alter table Sale add constraint FKrjvi0balejjcs0ishugwc7pp5 foreign key (Product_idProduct) references Product
+/*C9*/SET SCHEMA PUBLIC
+drop table if exists Client CASCADE 
+drop table if exists Payment CASCADE 
+drop table if exists Product CASCADE 
+drop table if exists Sale CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Client (idClient integer not null, CPF varchar(255) not null, adress varchar(255) not null, nomeClient varchar(255) not null, tel varchar(255) not null, primary key (idClient))
+create table Payment (idPayment integer not null, descriptionPayment varchar(255) not null, primary key (idPayment))
+create table Product (idProduct integer not null, descriptionProduct varchar(255) not null, primary key (idProduct))
+create table Sale (idSale integer not null, saleTime timestamp, status varchar(255), Client_idClient integer, Payment_idPayment integer, Product_idProduct integer, primary key (idSale))
+alter table Client add constraint UK_tffauhjxm1xmoir814ji2wxjq unique (CPF)
+alter table Sale add constraint FKndoffdyc0hhg45fxryje01p9s foreign key (Client_idClient) references Client
+alter table Sale add constraint FK3owj3j69atp9pnhmdpwl7lba9 foreign key (Payment_idPayment) references Payment
+alter table Sale add constraint FKrjvi0balejjcs0ishugwc7pp5 foreign key (Product_idProduct) references Product
+/*C7*/INSERT INTO PRODUCT VALUES(1,'Indai\u00e1')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 2
+COMMIT
+INSERT INTO PRODUCT VALUES(2,'Santa Joana')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 3
+COMMIT
+INSERT INTO PRODUCT VALUES(3,'Santa Clara')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 4
+COMMIT
+/*C8*/INSERT INTO PAYMENT VALUES(4,'Dinheiro')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 5
+COMMIT
+INSERT INTO PAYMENT VALUES(5,'Cart\u00e3o')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 6
+COMMIT
+/*C6*/INSERT INTO CLIENT VALUES(6,'70609433075','Av Boa viagem 123','Rayza Wilma','(81) 3333-3333')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 7
+COMMIT
+INSERT INTO CLIENT VALUES(7,'24093761000','Rua Nova 456','Thalita Brayner','(81) 98888-8888')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 8
+COMMIT
+INSERT INTO CLIENT VALUES(8,'48235674041','Travessa 890','Rafael Teste','(81) 99999-8888')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 9
+COMMIT
+/*C9*/INSERT INTO SALE VALUES(9,NULL,'Ativo',NULL,NULL,NULL)
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 10
+COMMIT
+/*C6*/SET SCHEMA PUBLIC
+drop table if exists Client CASCADE 
+drop table if exists Payment CASCADE 
+drop table if exists Product CASCADE 
+drop table if exists Sale CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Client (idClient integer not null, CPF varchar(255) not null, adress varchar(255) not null, nomeClient varchar(255) not null, tel varchar(255) not null, primary key (idClient))
+create table Payment (idPayment integer not null, descriptionPayment varchar(255) not null, primary key (idPayment))
+create table Product (idProduct integer not null, descriptionProduct varchar(255) not null, primary key (idProduct))
+create table Sale (idSale integer not null, saleTime timestamp, status varchar(255), Client_idClient integer, Payment_idPayment integer, Product_idProduct integer, primary key (idSale))
+alter table Client add constraint UK_tffauhjxm1xmoir814ji2wxjq unique (CPF)
+alter table Sale add constraint FKndoffdyc0hhg45fxryje01p9s foreign key (Client_idClient) references Client
+alter table Sale add constraint FK3owj3j69atp9pnhmdpwl7lba9 foreign key (Payment_idPayment) references Payment
+alter table Sale add constraint FKrjvi0balejjcs0ishugwc7pp5 foreign key (Product_idProduct) references Product
+/*C7*/SET SCHEMA PUBLIC
+drop table if exists Client CASCADE 
+drop table if exists Payment CASCADE 
+drop table if exists Product CASCADE 
+drop table if exists Sale CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Client (idClient integer not null, CPF varchar(255) not null, adress varchar(255) not null, nomeClient varchar(255) not null, tel varchar(255) not null, primary key (idClient))
+create table Payment (idPayment integer not null, descriptionPayment varchar(255) not null, primary key (idPayment))
+create table Product (idProduct integer not null, descriptionProduct varchar(255) not null, primary key (idProduct))
+create table Sale (idSale integer not null, saleTime timestamp, status varchar(255), Client_idClient integer, Payment_idPayment integer, Product_idProduct integer, primary key (idSale))
+alter table Client add constraint UK_tffauhjxm1xmoir814ji2wxjq unique (CPF)
+alter table Sale add constraint FKndoffdyc0hhg45fxryje01p9s foreign key (Client_idClient) references Client
+alter table Sale add constraint FK3owj3j69atp9pnhmdpwl7lba9 foreign key (Payment_idPayment) references Payment
+alter table Sale add constraint FKrjvi0balejjcs0ishugwc7pp5 foreign key (Product_idProduct) references Product
+/*C8*/SET SCHEMA PUBLIC
+drop table if exists Client CASCADE 
+drop table if exists Payment CASCADE 
+drop table if exists Product CASCADE 
+drop table if exists Sale CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Client (idClient integer not null, CPF varchar(255) not null, adress varchar(255) not null, nomeClient varchar(255) not null, tel varchar(255) not null, primary key (idClient))
+create table Payment (idPayment integer not null, descriptionPayment varchar(255) not null, primary key (idPayment))
+create table Product (idProduct integer not null, descriptionProduct varchar(255) not null, primary key (idProduct))
+create table Sale (idSale integer not null, saleTime timestamp, status varchar(255), Client_idClient integer, Payment_idPayment integer, Product_idProduct integer, primary key (idSale))
+alter table Client add constraint UK_tffauhjxm1xmoir814ji2wxjq unique (CPF)
+alter table Sale add constraint FKndoffdyc0hhg45fxryje01p9s foreign key (Client_idClient) references Client
+alter table Sale add constraint FK3owj3j69atp9pnhmdpwl7lba9 foreign key (Payment_idPayment) references Payment
+alter table Sale add constraint FKrjvi0balejjcs0ishugwc7pp5 foreign key (Product_idProduct) references Product
+/*C9*/SET SCHEMA PUBLIC
+drop table if exists Client CASCADE 
+drop table if exists Payment CASCADE 
+drop table if exists Product CASCADE 
+drop table if exists Sale CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Client (idClient integer not null, CPF varchar(255) not null, adress varchar(255) not null, nomeClient varchar(255) not null, tel varchar(255) not null, primary key (idClient))
+create table Payment (idPayment integer not null, descriptionPayment varchar(255) not null, primary key (idPayment))
+create table Product (idProduct integer not null, descriptionProduct varchar(255) not null, primary key (idProduct))
+create table Sale (idSale integer not null, saleTime timestamp, status varchar(255), Client_idClient integer, Payment_idPayment integer, Product_idProduct integer, primary key (idSale))
+alter table Client add constraint UK_tffauhjxm1xmoir814ji2wxjq unique (CPF)
+alter table Sale add constraint FKndoffdyc0hhg45fxryje01p9s foreign key (Client_idClient) references Client
+alter table Sale add constraint FK3owj3j69atp9pnhmdpwl7lba9 foreign key (Payment_idPayment) references Payment
+alter table Sale add constraint FKrjvi0balejjcs0ishugwc7pp5 foreign key (Product_idProduct) references Product
+/*C7*/INSERT INTO PRODUCT VALUES(1,'Indai\u00e1')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 2
+COMMIT
+INSERT INTO PRODUCT VALUES(2,'Santa Joana')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 3
+COMMIT
+INSERT INTO PRODUCT VALUES(3,'Santa Clara')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 4
+COMMIT
+/*C8*/INSERT INTO PAYMENT VALUES(4,'Dinheiro')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 5
+COMMIT
+INSERT INTO PAYMENT VALUES(5,'Cart\u00e3o')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 6
+COMMIT
+/*C6*/INSERT INTO CLIENT VALUES(6,'70609433075','Av Boa viagem 123','Rayza Wilma','(81) 3333-3333')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 7
+COMMIT
+INSERT INTO CLIENT VALUES(7,'24093761000','Rua Nova 456','Thalita Brayner','(81) 98888-8888')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 8
+COMMIT
+INSERT INTO CLIENT VALUES(8,'48235674041','Travessa 890','Rafael Teste','(81) 99999-8888')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 9
+COMMIT
+/*C9*/INSERT INTO SALE VALUES(9,NULL,'Ativo',NULL,NULL,NULL)
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 10
+COMMIT
+/*C6*/SET SCHEMA PUBLIC
+drop table if exists Client CASCADE 
+drop table if exists Payment CASCADE 
+drop table if exists Product CASCADE 
+drop table if exists Sale CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Client (idClient integer not null, CPF varchar(255) not null, adress varchar(255) not null, nomeClient varchar(255) not null, tel varchar(255) not null, primary key (idClient))
+create table Payment (idPayment integer not null, descriptionPayment varchar(255) not null, primary key (idPayment))
+create table Product (idProduct integer not null, descriptionProduct varchar(255) not null, primary key (idProduct))
+create table Sale (idSale integer not null, saleTime timestamp, status varchar(255), Client_idClient integer, Payment_idPayment integer, Product_idProduct integer, primary key (idSale))
+alter table Client add constraint UK_tffauhjxm1xmoir814ji2wxjq unique (CPF)
+alter table Sale add constraint FKndoffdyc0hhg45fxryje01p9s foreign key (Client_idClient) references Client
+alter table Sale add constraint FK3owj3j69atp9pnhmdpwl7lba9 foreign key (Payment_idPayment) references Payment
+alter table Sale add constraint FKrjvi0balejjcs0ishugwc7pp5 foreign key (Product_idProduct) references Product
+/*C7*/SET SCHEMA PUBLIC
+drop table if exists Client CASCADE 
+drop table if exists Payment CASCADE 
+drop table if exists Product CASCADE 
+drop table if exists Sale CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Client (idClient integer not null, CPF varchar(255) not null, adress varchar(255) not null, nomeClient varchar(255) not null, tel varchar(255) not null, primary key (idClient))
+create table Payment (idPayment integer not null, descriptionPayment varchar(255) not null, primary key (idPayment))
+create table Product (idProduct integer not null, descriptionProduct varchar(255) not null, primary key (idProduct))
+create table Sale (idSale integer not null, saleTime timestamp, status varchar(255), Client_idClient integer, Payment_idPayment integer, Product_idProduct integer, primary key (idSale))
+alter table Client add constraint UK_tffauhjxm1xmoir814ji2wxjq unique (CPF)
+alter table Sale add constraint FKndoffdyc0hhg45fxryje01p9s foreign key (Client_idClient) references Client
+alter table Sale add constraint FK3owj3j69atp9pnhmdpwl7lba9 foreign key (Payment_idPayment) references Payment
+alter table Sale add constraint FKrjvi0balejjcs0ishugwc7pp5 foreign key (Product_idProduct) references Product
+/*C8*/SET SCHEMA PUBLIC
+drop table if exists Client CASCADE 
+drop table if exists Payment CASCADE 
+drop table if exists Product CASCADE 
+drop table if exists Sale CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Client (idClient integer not null, CPF varchar(255) not null, adress varchar(255) not null, nomeClient varchar(255) not null, tel varchar(255) not null, primary key (idClient))
+create table Payment (idPayment integer not null, descriptionPayment varchar(255) not null, primary key (idPayment))
+create table Product (idProduct integer not null, descriptionProduct varchar(255) not null, primary key (idProduct))
+create table Sale (idSale integer not null, saleTime timestamp, status varchar(255), Client_idClient integer, Payment_idPayment integer, Product_idProduct integer, primary key (idSale))
+alter table Client add constraint UK_tffauhjxm1xmoir814ji2wxjq unique (CPF)
+alter table Sale add constraint FKndoffdyc0hhg45fxryje01p9s foreign key (Client_idClient) references Client
+alter table Sale add constraint FK3owj3j69atp9pnhmdpwl7lba9 foreign key (Payment_idPayment) references Payment
+alter table Sale add constraint FKrjvi0balejjcs0ishugwc7pp5 foreign key (Product_idProduct) references Product
+/*C9*/SET SCHEMA PUBLIC
+drop table if exists Client CASCADE 
+drop table if exists Payment CASCADE 
+drop table if exists Product CASCADE 
+drop table if exists Sale CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Client (idClient integer not null, CPF varchar(255) not null, adress varchar(255) not null, nomeClient varchar(255) not null, tel varchar(255) not null, primary key (idClient))
+create table Payment (idPayment integer not null, descriptionPayment varchar(255) not null, primary key (idPayment))
+create table Product (idProduct integer not null, descriptionProduct varchar(255) not null, primary key (idProduct))
+create table Sale (idSale integer not null, saleTime timestamp, status varchar(255), Client_idClient integer, Payment_idPayment integer, Product_idProduct integer, primary key (idSale))
+alter table Client add constraint UK_tffauhjxm1xmoir814ji2wxjq unique (CPF)
+alter table Sale add constraint FKndoffdyc0hhg45fxryje01p9s foreign key (Client_idClient) references Client
+alter table Sale add constraint FK3owj3j69atp9pnhmdpwl7lba9 foreign key (Payment_idPayment) references Payment
+alter table Sale add constraint FKrjvi0balejjcs0ishugwc7pp5 foreign key (Product_idProduct) references Product
+/*C7*/INSERT INTO PRODUCT VALUES(1,'Indai\u00e1')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 2
+COMMIT
+INSERT INTO PRODUCT VALUES(2,'Santa Joana')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 3
+COMMIT
+INSERT INTO PRODUCT VALUES(3,'Santa Clara')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 4
+COMMIT
+/*C8*/INSERT INTO PAYMENT VALUES(4,'Dinheiro')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 5
+COMMIT
+INSERT INTO PAYMENT VALUES(5,'Cart\u00e3o')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 6
+COMMIT
+/*C6*/INSERT INTO CLIENT VALUES(6,'70609433075','Av Boa viagem 123','Rayza Wilma','(81) 3333-3333')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 7
+COMMIT
+INSERT INTO CLIENT VALUES(7,'24093761000','Rua Nova 456','Thalita Brayner','(81) 98888-8888')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 8
+COMMIT
+INSERT INTO CLIENT VALUES(8,'48235674041','Travessa 890','Rafael Teste','(81) 99999-8888')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 9
+COMMIT
+/*C6*/SET SCHEMA PUBLIC
+drop table if exists Client CASCADE 
+drop table if exists Payment CASCADE 
+drop table if exists Product CASCADE 
+drop table if exists Sale CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Client (idClient integer not null, CPF varchar(255) not null, adress varchar(255) not null, nomeClient varchar(255) not null, tel varchar(255) not null, primary key (idClient))
+create table Payment (idPayment integer not null, descriptionPayment varchar(255) not null, primary key (idPayment))
+create table Product (idProduct integer not null, descriptionProduct varchar(255) not null, primary key (idProduct))
+create table Sale (idSale integer not null, saleTime timestamp, status varchar(255), Client_idClient integer, Payment_idPayment integer, Product_idProduct integer, primary key (idSale))
+alter table Client add constraint UK_tffauhjxm1xmoir814ji2wxjq unique (CPF)
+alter table Sale add constraint FKndoffdyc0hhg45fxryje01p9s foreign key (Client_idClient) references Client
+alter table Sale add constraint FK3owj3j69atp9pnhmdpwl7lba9 foreign key (Payment_idPayment) references Payment
+alter table Sale add constraint FKrjvi0balejjcs0ishugwc7pp5 foreign key (Product_idProduct) references Product
+/*C7*/SET SCHEMA PUBLIC
+drop table if exists Client CASCADE 
+drop table if exists Payment CASCADE 
+drop table if exists Product CASCADE 
+drop table if exists Sale CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Client (idClient integer not null, CPF varchar(255) not null, adress varchar(255) not null, nomeClient varchar(255) not null, tel varchar(255) not null, primary key (idClient))
+create table Payment (idPayment integer not null, descriptionPayment varchar(255) not null, primary key (idPayment))
+create table Product (idProduct integer not null, descriptionProduct varchar(255) not null, primary key (idProduct))
+create table Sale (idSale integer not null, saleTime timestamp, status varchar(255), Client_idClient integer, Payment_idPayment integer, Product_idProduct integer, primary key (idSale))
+alter table Client add constraint UK_tffauhjxm1xmoir814ji2wxjq unique (CPF)
+alter table Sale add constraint FKndoffdyc0hhg45fxryje01p9s foreign key (Client_idClient) references Client
+alter table Sale add constraint FK3owj3j69atp9pnhmdpwl7lba9 foreign key (Payment_idPayment) references Payment
+alter table Sale add constraint FKrjvi0balejjcs0ishugwc7pp5 foreign key (Product_idProduct) references Product
+/*C8*/SET SCHEMA PUBLIC
+drop table if exists Client CASCADE 
+drop table if exists Payment CASCADE 
+drop table if exists Product CASCADE 
+drop table if exists Sale CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Client (idClient integer not null, CPF varchar(255) not null, adress varchar(255) not null, nomeClient varchar(255) not null, tel varchar(255) not null, primary key (idClient))
+create table Payment (idPayment integer not null, descriptionPayment varchar(255) not null, primary key (idPayment))
+create table Product (idProduct integer not null, descriptionProduct varchar(255) not null, primary key (idProduct))
+create table Sale (idSale integer not null, saleTime timestamp, status varchar(255), Client_idClient integer, Payment_idPayment integer, Product_idProduct integer, primary key (idSale))
+alter table Client add constraint UK_tffauhjxm1xmoir814ji2wxjq unique (CPF)
+alter table Sale add constraint FKndoffdyc0hhg45fxryje01p9s foreign key (Client_idClient) references Client
+alter table Sale add constraint FK3owj3j69atp9pnhmdpwl7lba9 foreign key (Payment_idPayment) references Payment
+alter table Sale add constraint FKrjvi0balejjcs0ishugwc7pp5 foreign key (Product_idProduct) references Product
+/*C9*/SET SCHEMA PUBLIC
+drop table if exists Client CASCADE 
+drop table if exists Payment CASCADE 
+drop table if exists Product CASCADE 
+drop table if exists Sale CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Client (idClient integer not null, CPF varchar(255) not null, adress varchar(255) not null, nomeClient varchar(255) not null, tel varchar(255) not null, primary key (idClient))
+create table Payment (idPayment integer not null, descriptionPayment varchar(255) not null, primary key (idPayment))
+create table Product (idProduct integer not null, descriptionProduct varchar(255) not null, primary key (idProduct))
+create table Sale (idSale integer not null, saleTime timestamp, status varchar(255), Client_idClient integer, Payment_idPayment integer, Product_idProduct integer, primary key (idSale))
+alter table Client add constraint UK_tffauhjxm1xmoir814ji2wxjq unique (CPF)
+alter table Sale add constraint FKndoffdyc0hhg45fxryje01p9s foreign key (Client_idClient) references Client
+alter table Sale add constraint FK3owj3j69atp9pnhmdpwl7lba9 foreign key (Payment_idPayment) references Payment
+alter table Sale add constraint FKrjvi0balejjcs0ishugwc7pp5 foreign key (Product_idProduct) references Product
+/*C7*/INSERT INTO PRODUCT VALUES(1,'Indai\u00e1')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 2
+COMMIT
+INSERT INTO PRODUCT VALUES(2,'Santa Joana')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 3
+COMMIT
+INSERT INTO PRODUCT VALUES(3,'Santa Clara')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 4
+COMMIT
+/*C8*/INSERT INTO PAYMENT VALUES(4,'Dinheiro')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 5
+COMMIT
+INSERT INTO PAYMENT VALUES(5,'Cart\u00e3o')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 6
+COMMIT
+/*C6*/INSERT INTO CLIENT VALUES(6,'70609433075','Av Boa viagem 123','Rayza Wilma','(81) 3333-3333')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 7
+COMMIT
+INSERT INTO CLIENT VALUES(7,'24093761000','Rua Nova 456','Thalita Brayner','(81) 98888-8888')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 8
+COMMIT
+INSERT INTO CLIENT VALUES(8,'48235674041','Travessa 890','Rafael Teste','(81) 99999-8888')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 9
+COMMIT
+/*C6*/SET SCHEMA PUBLIC
+drop table if exists Client CASCADE 
+drop table if exists Payment CASCADE 
+drop table if exists Product CASCADE 
+drop table if exists Sale CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Client (idClient integer not null, CPF varchar(255) not null, adress varchar(255) not null, nomeClient varchar(255) not null, tel varchar(255) not null, primary key (idClient))
+create table Payment (idPayment integer not null, descriptionPayment varchar(255) not null, primary key (idPayment))
+create table Product (idProduct integer not null, descriptionProduct varchar(255) not null, primary key (idProduct))
+create table Sale (idSale integer not null, saleTime timestamp, status varchar(255), Client_idClient integer, Payment_idPayment integer, Product_idProduct integer, primary key (idSale))
+alter table Client add constraint UK_tffauhjxm1xmoir814ji2wxjq unique (CPF)
+alter table Sale add constraint FKndoffdyc0hhg45fxryje01p9s foreign key (Client_idClient) references Client
+alter table Sale add constraint FK3owj3j69atp9pnhmdpwl7lba9 foreign key (Payment_idPayment) references Payment
+alter table Sale add constraint FKrjvi0balejjcs0ishugwc7pp5 foreign key (Product_idProduct) references Product
+/*C7*/SET SCHEMA PUBLIC
+drop table if exists Client CASCADE 
+drop table if exists Payment CASCADE 
+drop table if exists Product CASCADE 
+drop table if exists Sale CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Client (idClient integer not null, CPF varchar(255) not null, adress varchar(255) not null, nomeClient varchar(255) not null, tel varchar(255) not null, primary key (idClient))
+create table Payment (idPayment integer not null, descriptionPayment varchar(255) not null, primary key (idPayment))
+create table Product (idProduct integer not null, descriptionProduct varchar(255) not null, primary key (idProduct))
+create table Sale (idSale integer not null, saleTime timestamp, status varchar(255), Client_idClient integer, Payment_idPayment integer, Product_idProduct integer, primary key (idSale))
+alter table Client add constraint UK_tffauhjxm1xmoir814ji2wxjq unique (CPF)
+alter table Sale add constraint FKndoffdyc0hhg45fxryje01p9s foreign key (Client_idClient) references Client
+alter table Sale add constraint FK3owj3j69atp9pnhmdpwl7lba9 foreign key (Payment_idPayment) references Payment
+alter table Sale add constraint FKrjvi0balejjcs0ishugwc7pp5 foreign key (Product_idProduct) references Product
+/*C8*/SET SCHEMA PUBLIC
+drop table if exists Client CASCADE 
+drop table if exists Payment CASCADE 
+drop table if exists Product CASCADE 
+drop table if exists Sale CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Client (idClient integer not null, CPF varchar(255) not null, adress varchar(255) not null, nomeClient varchar(255) not null, tel varchar(255) not null, primary key (idClient))
+create table Payment (idPayment integer not null, descriptionPayment varchar(255) not null, primary key (idPayment))
+create table Product (idProduct integer not null, descriptionProduct varchar(255) not null, primary key (idProduct))
+create table Sale (idSale integer not null, saleTime timestamp, status varchar(255), Client_idClient integer, Payment_idPayment integer, Product_idProduct integer, primary key (idSale))
+alter table Client add constraint UK_tffauhjxm1xmoir814ji2wxjq unique (CPF)
+alter table Sale add constraint FKndoffdyc0hhg45fxryje01p9s foreign key (Client_idClient) references Client
+alter table Sale add constraint FK3owj3j69atp9pnhmdpwl7lba9 foreign key (Payment_idPayment) references Payment
+alter table Sale add constraint FKrjvi0balejjcs0ishugwc7pp5 foreign key (Product_idProduct) references Product
+/*C9*/SET SCHEMA PUBLIC
+drop table if exists Client CASCADE 
+drop table if exists Payment CASCADE 
+drop table if exists Product CASCADE 
+drop table if exists Sale CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Client (idClient integer not null, CPF varchar(255) not null, adress varchar(255) not null, nomeClient varchar(255) not null, tel varchar(255) not null, primary key (idClient))
+create table Payment (idPayment integer not null, descriptionPayment varchar(255) not null, primary key (idPayment))
+create table Product (idProduct integer not null, descriptionProduct varchar(255) not null, primary key (idProduct))
+create table Sale (idSale integer not null, saleTime timestamp, status varchar(255), Client_idClient integer, Payment_idPayment integer, Product_idProduct integer, primary key (idSale))
+alter table Client add constraint UK_tffauhjxm1xmoir814ji2wxjq unique (CPF)
+alter table Sale add constraint FKndoffdyc0hhg45fxryje01p9s foreign key (Client_idClient) references Client
+alter table Sale add constraint FK3owj3j69atp9pnhmdpwl7lba9 foreign key (Payment_idPayment) references Payment
+alter table Sale add constraint FKrjvi0balejjcs0ishugwc7pp5 foreign key (Product_idProduct) references Product
+/*C7*/INSERT INTO PRODUCT VALUES(1,'Indai\u00e1')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 2
+COMMIT
+INSERT INTO PRODUCT VALUES(2,'Santa Joana')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 3
+COMMIT
+INSERT INTO PRODUCT VALUES(3,'Santa Clara')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 4
+COMMIT
+/*C8*/INSERT INTO PAYMENT VALUES(4,'Dinheiro')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 5
+COMMIT
+INSERT INTO PAYMENT VALUES(5,'Cart\u00e3o')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 6
+COMMIT
+/*C6*/INSERT INTO CLIENT VALUES(6,'70609433075','Av Boa viagem 123','Rayza Wilma','(81) 3333-3333')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 7
+COMMIT
+INSERT INTO CLIENT VALUES(7,'24093761000','Rua Nova 456','Thalita Brayner','(81) 98888-8888')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 8
+COMMIT
+INSERT INTO CLIENT VALUES(8,'48235674041','Travessa 890','Rafael Teste','(81) 99999-8888')
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 9
+COMMIT
+/*C9*/INSERT INTO SALE VALUES(9,NULL,'Ativo',NULL,NULL,NULL)
+ALTER SEQUENCE PUBLIC.HIBERNATE_SEQUENCE RESTART WITH 10
+COMMIT
